@@ -8,7 +8,6 @@ public class NlwWeekApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(NlwWeekApplication.class, args);
-		System.out.println("hello world");
 	}
 
 }
