@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
                 // Controller
 @RequestMapping("/mapping") // informa qual o recurso/path que o navegador deve procurar ao iniciar a
                             // aplicação
-public class PrimeiraController {
+public class ControllerTest {
 
     @GetMapping("/retornarMapping") // definição do path para fazer uma espécie de ligação entre o RequestMapping e
                                     // o método por meio do GetMapping
@@ -35,7 +35,8 @@ public class PrimeiraController {
         return usuario; // retorna o objeto como se fosse um .json
     }
 
-    @PostMapping("/primeiroPost") // o navegador só é capaz de acessar recursos via Get e não Post, para isso é preciso do HttPie
+    @PostMapping("/primeiroPost") // o navegador só é capaz de acessar recursos via Get e não Post, para isso é
+                                  // preciso do HttPie
     public String primeiroPost() {
         return "Meu primeiro post...";
     }
